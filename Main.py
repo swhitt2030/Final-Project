@@ -3,6 +3,18 @@ from math import sin, cos, radians, sqrt
 from drafter import *
 import matplotlib.pyplot as plt
 
+# Website information.
+
+set_site_information(
+    "Sydney Whittaker",
+    "An educational rocket trajectory calculator.",
+    ["OpenStax College Physics 2e: Projectile Motion"],
+    ["Rocket Trajectory Estimator: Enter velocity, starting "
+     "height, and launch angle to calculate projectile motion."],
+    []
+)
+#hide_debug_information()
+set_website_framed(False)
 
 # Gravity constant (meters per second squared)
 GRAVITY = 9.81
@@ -439,19 +451,6 @@ def test_calculate_values():
 
 # Run the test.
 test_calculate_values()
-
-
-# Website information.
-# Replace Your Name with your actual name.
-
-set_site_information(
-    "Sydney Whittaker",
-    "An educational rocket trajectory calculator.",
-    ["OpenStax College Physics 2e: Projectile Motion"],
-    ["Rocket Trajectory Estimator: Enter velocity, starting "
-     "height, and launch angle to calculate projectile motion."],
-    []
-)
 
 
 # Start the website.
